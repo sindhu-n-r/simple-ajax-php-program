@@ -1,0 +1,19 @@
+<html>
+<head>
+<style>
+p{
+    color: rgb(42, 137, 219);
+    font-family: font-family: Arial, Helvetica, sans-serif;
+}
+
+</style>
+</head>
+
+<body>
+
+<p><br> PARIS <br>
+BUY SOUVENIR FOR YOUR LOVED ONES!!<br>
+
+USE CODE "PARIS20" TO GET UPTO 50% OFF!!<br></p>
+</body>
+</html>

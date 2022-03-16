@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11</title>
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33%;
+        padding: 20px;
+        height: 700px; 
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    body{
+        background-color: aliceblue;
+    }
+    H2{
+        color: rgb(42, 137, 219);
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .demo1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    img{
+        margin-left: 80px;
+        margin-right: 80px;
+        width:500px;
+        height:300px; 
+        background: none;
+        transition: width 2s, height 4s, transform 2s;
+    }
+
+   
+    p{
+        text-align: center;
+       
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    pre{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .bt{
+        border: none;
+        background-Color: rgb(42, 137, 219);
+        color : white;
+        padding : 15px 32px;
+        display : inline-block;
+        font-size : 16px;
+    }
+
+    img:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+    #paris {
+      position: relative;
+      cursor: pointer;
+    }
+    nav{
+    float: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+  }
+  a{
+    background-color: rgb(42, 137, 219);
+    text-decoration: none;
+    padding: 10px;
+    color: whitesmoke;
+  }
+  a:hover{
+    background-color: black;
+  }
+
+  h3{
+    background-color: rgb(42, 137, 219);
+    text-decoration: none;
+    padding: 10px;
+    color: whitesmoke;
+  }
+
+
+    </style>
+
+    
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo1"></p>
+    <div id="demo">
+        
+        <nav>
+            <center>
+            <a href="day11.html">ABOUT</a> 
+            <a href="day11(2).html">FEEDBACK</a> 
+            </nav>
+        </center>
+        <br>
+        <br>
+       
+        <center>
+        <button onclick="myFunction()" style="border: none;background-color: rgb(42, 137, 219);color: whitesmoke;padding: 10px;">GUIDE</button>
+    </center>
+
+    <center>
+        
+        <form action=""> 
+            <h3>Any queries? <input type="text" id="txt1" onkeyup="showHint(this.value)">
+        </form>
+        <br>
+        <span id="txtHint"></span></h3> 
+
+    </center>
+
+        <h1 id="h1">PARIS</h1>
+        <h2>PARIS THE CITY OF LIGHT</h2>
+
+
+    </div>
+    <img id="paris" src="https://c.tenor.com/38ERdCzR-4cAAAAC/paris-love.gif">
+    <br>
+    <div class="row">
+        <div class="column" style="background-color:rgb(211, 228, 243);">
+          <h2><i>PARIS</i></h2>
+          <p class="para"><img src="paris.jpg" alt="paris" style="width:500px;height:300px;"></p>
+          <pre>
+    Paris, city and capital of France, situated in the north-central part of the country. 
+    People were living on the site of the present-day city, located along the Seine River some 
+    233 miles (375 km) upstream from the river's mouth on the English Channel (La Manche), by 
+    about 7600 BCE. The modern city has spread from the island (the Île de la Cité) and far 
+    beyond both banks of the Seine. Paris occupies a central position in the rich agricultural 
+    region known as the Paris Basin, and it constitutes one of eight départements of the 
+    Île-de-France administrative region. It is by far the country's most important centre of 
+    commerce and culture. Area city, 41 square miles (105 square km); metropolitan area, 890 
+    square miles (2,300 square km). Pop. (2012) city, 2,265,886; (2015 est.) urban 
+    agglomeration, 10,858,000.</pre>
+        </div>
+        
+        <div class="column" style="background-color:rgb(181, 216, 245);">
+          <h2><i>CHARACTER OF THE CITY</i></h2>
+          <p class="para">For centuries Paris has been one of the world's most <br>
+            important and attractive cities. It is appreciated for the opportunities it offers <br> 
+            for business and commerce, for study, for culture, and for entertainment; its gastronomy, <br>
+            haute couture, painting, literature, and intellectual community especially enjoy an enviable <br>
+            reputation. Its sobriquet “the City of Light” (“la Ville Lumière”), earned during the <br>
+            Enlightenment, remains appropriate, for Paris has retained its importance as a centre <br>
+            for education and intellectual pursuits.
+        <br>
+    <br>
+    <br>
+    <img id="img" src="paris3.jpg"></p>
+        </div>
+        <div class="column" style="background-color:rgb(150, 200, 243);">
+            <h2><i>HISTORICAL PARIS</i></h2>
+            <p class="para"><img src="paris3.jpg" alt="paris">  </p>
+            <pre> 
+            The three main parts of historical Paris are defined by the Seine. 
+            At its centre is the Île de la Cité, which is the seat of religious and 
+            temporal authority (the word cité connotes the nucleus of the ancient city). 
+            The Seine's Left Bank (Rive Gauche) has traditionally been the seat of 
+            intellectual life, and its Right Bank (Rive Droite) contains the heart of 
+            the city's economic life, but the distinctions have become blurred in recent 
+            decades. The fusion of all these functions at the centre of France and, later,
+            at the centre of an empire, resulted in a tremendously vital environment.
+            In this environment, however, the emotional and intellectual climate that 
+            was created by contending powers often set the stage for great violence in 
+            both the social and political arenas—the years 1358, 1382, 1588, 
+            1648, 1789, 1830, 1848, and 1871 being notable for such events. </pre>
+          </div>
+      </div>
+ 
+
+    <h2>GALLERY</h2>
+    <div class="row">
+        <div class="column" style="background-color:rgb(211, 228, 243);">
+        <img src="paris4.jpg">
+        <br>
+        <br>
+        <img src="paris5.jpg">
+        </div>
+        
+        <div class="column" style="background-color:rgb(181, 216, 245);">
+            <img src="paris6.webp">
+            <br>
+            <br>
+            <img src="paris7.jpg">
+        </div>
+        <div class="column" style="background-color:rgb(150, 200, 243);">
+            <img src="paris8.jpg">
+            <br>
+            <br>
+            <img src="paris9.webp">
+          </div>
+      </div>
+      
+
+
+      <p id="demo3"></p>
+
+      <i><b><p  onclick="changeText(this)" >“CLICK HERE”</p></i></b>
+  
+      <p id="demo4"></p>
+
+
+    <p id="demo5"></p>
+  
+    <p id="demo6"></p>
+
+    <p id="demo10"></p>
+
+    <CENTER>
+    <h3>ADVERTISEMENT</h3>
+
+    <p id="demo11"> </p>
+    <button type="button" onclick="loadDoc()">CLICK HERE</button>
+    </CENTER>
+
+
+
+
+    <script>
+        //html output stream
+        function myFunction() {
+            const myWindow = window.open();
+            myWindow.document.open();
+            myWindow.document.write("<P>Mondrian moved from Amsterdam to the French capital in 1912. He was soon mixing in artistic circles, and it wasn't long before he developed his own highly abstract variant of cubism. He remained in Paris for two years. In summer 1914, he was back in the Netherlands for a visit when the First World War broke out, delaying his return to France. Mondrian stayed in his home country for the duration of the war but retained his Paris studio. When he finally got back in 1919, the city seemed to have lost much of its charm. Classical ideals reigned above abstract experimentation, and little was left of the old revolutionary energy. Art appeared to have stopped speeding forward and begun moving backward.Mondrian, on the other hand, had made significant advances in his own work and his theory of art during the war years. He had produced his first abstract paintings in Laren. He believed art had a guiding role to play in bringing about a harmonious society in which opposites would elevate each other. It was this that he sought to make visible in his work.</P> ");
+            myWindow.document.close();
+}
+
+        //animation
+        paris.onclick = function() {
+        let start = Date.now(); 
+        let timer = setInterval(function() {
+            let timePassed = Date.now() - start;
+            if (timePassed >= 3500) {
+                clearInterval(timer); 
+                return;
+            }
+            draw(timePassed);
+        }, 
+        20);
+        function draw(timePassed) {
+            paris.style.left = timePassed / 5 + 'px';
+        }
+    }
+
+        //change html content and style
+        const element = document.getElementById("h1");
+        element.innerHTML = "WELCOME TO PARIS";
+        document.getElementById("h1").style.fontFamily = "Arial, Helvetica, sans-serif";
+        document.getElementById("h1").style.textAlign = "center";
+        document.getElementById("h1").style.color= "rgb(42, 137, 219)";
+
+        //change value of attribute
+        document.getElementById("img").src = "paris2.jpg";
+
+
+        //reacting to events
+        function changeText(id) {
+            id.innerHTML = "'Paris is not a city; it's a world.'";
+        }
+
+        //event attributes
+        document.getElementById("Btn").onclick = displayDate;
+        function displayDate() {
+            document.getElementById("demo7").innerHTML = "20% DISCOUNT AVAILABLE TILL 20TH MARCH";
+            document.getElementById("demo7").style.float = "center";
+        }
+
+        document.getElementById("Btn").style.border = "none";
+        document.getElementById("Btn").style.backgroundColor = "rgb(42, 137, 219)";
+        document.getElementById("Btn").style.color = "white";
+        document.getElementById("Btn").style.padding = "15px 32px";
+        document.getElementById("Btn").style.display= "inline-block";
+        document.getElementById("Btn").style.font = "16px";
+
+
+        
+        
+        //ajax php
+        function showHint(str) {
+    if (str.length == 0) {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "gethint.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "test.txt", false);
+  xhttp.send();
+  document.getElementById("demo11").innerHTML = xhttp.responseText;
+}
+
+        
+
+        
+
+
+
+        //object properties
+        //const paris = {
+        //    start : "WELCOME",
+        //    end     : "PARIS"
+        //};
+        //document.getElementById("demo").innerHTML = paris.start+ " TO " + paris.end + " !!!";
+        //document.getElementById("demo").style.fontFamily = "Arial, Helvetica, sans-serif";
+        //document.getElementById("demo").style.textAlign = "center";
+
+        //object methods
+        ///const date = {
+        ///    discount: "20%",
+        ///    lastdate: "15 MARCH 2022",
+        ///    booking : function() {
+        ///        return this.discount + " DISCOUNT AVAILABLE TILL " + this.lastdate;
+        ///    }
+        ///};
+        ///document.getElementById("demo2").innerHTML = date.booking();
+        ///document.getElementById("demo2").style.fontFamily = "Arial, Helvetica, sans-serif";
+        ///document.getElementById("demo2").style.textAlign = "center";
+
+        //object accessors
+        //const lang = {
+        //    st: "THIS PAGE",
+        //    ed: "IS NOT",
+        //    language: "IN ENGLISH",
+        //    set lang(value) {
+        //        this.language = value;
+        //    }
+        //};
+        //lang.lang = "THIS PAGE IS IN ENGLISH";
+        //document.getElementById("demo4").innerHTML = lang.language;
+        //document.getElementById("demo4").style.fontFamily = "Arial, Helvetica, sans-serif";
+        //document.getElementById("demo4").style.textAlign = "center";
+
+        //object constructors
+        //function Person(first, last) {
+        //    this.firstName = first;
+        //    this.lastName = last;
+        //}
+        
+        //const myName = new Person("Sindhu", " N R");
+        //const myName1 = new Person("Sindhu", "Ramesh");
+        //document.getElementById("demo5").innerHTML = "This page is created by " + myName.firstName + " " + myName.lastName + "."; 
+        //document.getElementById("demo5").style.fontFamily = "Arial, Helvetica, sans-serif";
+        //document.getElementById("demo5").style.textAlign = "center";
+
+        //object prototypes
+        //function Place(firstn, lastn) {
+        //    this.fName = firstn;
+        //    this.lName = lastn;
+        //}
+        
+        //Place.prototype.names = function() {
+        //    return this.fName + " " + this.lName
+        //};
+        
+        //const myCollege = new Place("BANNARI AMMAN", "INSTITUTE OF TECHNOLOGY");
+        //document.getElementById("demo6").innerHTML = " " + myCollege.names(); 
+        //document.getElementById("demo6").style.fontFamily = "Arial, Helvetica, sans-serif";
+        //document.getElementById("demo6").style.textAlign = "right";
+
+        //html dom
+        const x = document.getElementById("main");
+        const y = x.getElementsByTagName("h2");
+        document.getElementById("demo1").innerHTML = 'THIS PAGE IS A GUIDE TO: ' + y[0].innerHTML;
+        document.getElementById("demo1").style.fontFamily = "Arial, Helvetica, sans-serif";
+        document.getElementById("demo1").style.textAlign = "center";
+        document.getElementById("demo1").style.color= "rgb(42, 137, 219)";
+
+        //html dom
+        const z = document.getElementsByClassName("para");
+        document.getElementById("demo3").innerHTML = 
+        'Summary: ' + z[5].innerHTML;
+        document.getElementById("demo3").style.fontFamily = "Arial, Helvetica, sans-serif";
+        document.getElementById("demo3").style.textAlign = "center";
+
+    </script>
+
+
+
+</body>
+</html>
